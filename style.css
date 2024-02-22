@@ -233,6 +233,7 @@ body {
 }
 .container-localizacao p{
   text-align: justify;
+  font-size: 20pt;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -270,7 +271,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 5%;
-  padding-bottom: 5%;
 
 }
 
