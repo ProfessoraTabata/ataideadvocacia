@@ -66,28 +66,6 @@ body {
   position: relative;
 }
 
-.carousel-item .carousel-caption {
-  position: absolute;
-  top: 50%; /* Centraliza verticalmente */
-  left: 70%; /* Centraliza horizontalmente */
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 900px; /* Limita a largura máxima */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.carousel-item .carousel-caption h5 {
-  text-align: center;
-  font-size: 42pt;
-  margin-bottom: 10px; /* Adiciona um espaço entre o título e o texto */
-}
-
-.carousel-item .carousel-caption p {
-  text-align: center;
-  font-size: 18pt;
-}
-
 .quemSomos {
   display: flex;
   width: 100%;
@@ -95,7 +73,7 @@ body {
   background-color: var(--branco);
   justify-content: center;
   align-items: flex-start; /* Align items at the top of each container-item */
-  padding-top: 5%; /* Ajuste o valor conforme necessário */
+  padding-top: 3%; /* Ajuste o valor conforme necessário */
 
 }
 .quemSomos h1{
@@ -196,7 +174,7 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 .areaAtuacao{
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .areaAtuacao a {
@@ -210,7 +188,7 @@ body {
 }
 
 .lineAreaAtuacao {
-  margin-top: 5%;
+  margin-top: 3%;
   text-align: center;
 }
 
@@ -220,8 +198,8 @@ body {
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   color: #fff;
 }
 
@@ -266,11 +244,11 @@ body {
 .container-localizacaoOnline{
   background-color: #f4f4f4;
   width: 100%;
-  height: 100%;
+  height: 80%;
   color: var(--azulMarinho);
   display: flex;
   justify-content: space-between;
-  padding-top: 5%;
+  padding-top: 3%;
 
 }
 
@@ -281,17 +259,46 @@ body {
   padding-bottom: 20px;
 }
 .container-localizacaoOnline p{
+  font-size: 14pt;
   text-align: justify;
   margin-left: 10%;
   margin-right: 10%;
 }
-.container-caixa-direita{
+.container-caixa-direita {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-right: 5%;
-  width: 160%;
-  height: 80%;
-  background-color: rgba(0,0,0, 0.2);
+  width: 200%;
+  height: 90%;
+  background-color: rgba(87, 112, 145, 0.3);
 }
+.areaAtuacao2{
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+  margin-right: 50px;
+  margin: 20px;
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: var(--azulMarinho);
+  font-size: 22pt;
+  padding: 5px;
+  float: left;
 
+  font-weight: bold;
+}
+.areaAtuacao2 p{
+  font-size: 18pt;
+  padding-left: 20px;
+  margin: 0;
+  letter-spacing: -0.09em;
+}
+.areaAtuacao2 img{
+  margin: 20px;
+}
 .rodape {
   padding: 2%;
   background-color: #710012;
@@ -478,15 +485,204 @@ z-index: 1000;
   
 }
 
-/*Para aplicativos com tela entre 999 && 1224*/
-
-@media (min-width: 999px) and (max-width: 1224px) {
-.btn_precisaAjuda {
-  display: none;
+@media (min-width: 481px) and (max-width: 768px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-imagem-sobre{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
 }
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+
+  .btn_precisaAjuda {
+    display: none; /* Ocultando o botão de ajuda em telas menores */
+  }
+
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
+  }
+
+  .quemSomos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    align-items: center;
+    height: auto; /* Ajustando altura conforme o conteúdo */
+ 
+  }
+
+  .quemSomos h1 {
+    font-size: 24pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 12pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    margin-right: 16px;
+    font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  #botaoNos{
+    padding: 10px;
+    font-size: 12pt;
+    width: 45%;
+    height: 40%;
+  }
+  .container-imagem-sobre {
+    display: none;
+  }
+  /* Ajustes na estilização da container-sections para telas menores */
+  .areaAtuacao{
+    width: 100%;
+    height: 70px;
+    align-items: center; /* Centraliza os itens na coluna */
+    text-align: center; /* Centraliza o texto */
+  }
+  .content-icon{
+    width: 100%;
+    font-size: 20pt !important;
+  }
+
+  .titulo {
+    width: 100%;
+    margin-left: 16px;
+    font-size: 24px; /* Reduz o tamanho do título */
+    text-align: center !important;
+    margin-bottom: 1.5em;
+  }
+  .areaAtuacao p {
+    width: 100%;
+    margin-top: 10%; /* Ajusta a margem superior do parágrafo */
+    font-size: 9pt;
+    margin-top: 1.5em;
+   
+  }
+
+  .container-imagem-sobre2{
+    display: none;
+  }
 }
 
-@media (min-width: 1020px) and (max-width: 1600px){
+@media (min-width: 769px) and (max-width: 1224px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-imagem-sobre{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
+}
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+
+  .btn_precisaAjuda {
+    display: none; /* Ocultando o botão de ajuda em telas menores */
+  }
+
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
+  }
+
+  .quemSomos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    align-items: center;
+    height: auto; /* Ajustando altura conforme o conteúdo */
+ 
+  }
+
+  .quemSomos h1 {
+    font-size: 24pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 12pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    margin-right: 16px;
+    font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  #botaoNos{
+    padding: 10px;
+    font-size: 12pt;
+    width: 45%;
+    height: 40%;
+  }
+  .container-imagem-sobre {
+    display: none;
+  }
+  /* Ajustes na estilização da container-sections para telas menores */
+  .areaAtuacao{
+    width: 100%;
+    height: 70px;
+    align-items: center; /* Centraliza os itens na coluna */
+    text-align: center; /* Centraliza o texto */
+  }
+  .content-icon{
+    width: 100%;
+    font-size: 20pt !important;
+  }
+
+  .titulo {
+    width: 100%;
+    margin-left: 16px;
+    font-size: 24px; /* Reduz o tamanho do título */
+    text-align: center !important;
+    margin-bottom: 1.5em;
+  }
+  .areaAtuacao p {
+    width: 100%;
+    margin-top: 10%; /* Ajusta a margem superior do parágrafo */
+    font-size: 9pt;
+    margin-top: 1.5em;
+   
+  }
+
+  .container-imagem-sobre2{
+    display: none;
+  }
+  
+}
+
+@media (min-width: 1225px) and (max-width: 1600px){
   .container-imagem-sobre {
     display: none;
   }
