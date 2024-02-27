@@ -118,7 +118,7 @@
     </header>
     
     <div class="quemSomos" id="advogadaTitular">
-      <div class="container-item">
+      <div class="container-item-diferente">
         <h2>ADVOGADA TITULAR</h2>
         <h1>KARLA ATAIDE</h1>
         <p>Karla Ataide é a Advogada Titular do Escritório, sendo
@@ -130,13 +130,11 @@
             Formada pela Universidade da Amazônia – UNAMA, abraçou
             a Advocacia em função da sua vasta experiência no ativismo
             PELOS Direitos Animais e do Meio Ambiente, que remonta
-            desde o inicio de sua jornada acadêmica em 2007. 
-            <button id="botaoNos">SOBRE NÓS</button>   
-                   
+            desde o inicio de sua jornada acadêmica em 2007.                
         </p>
       </div>
       <div class="container-item">
-        <img src="./Advogados/fotoCabeloPreso.jpg" width = "200px"> 
+        <img src="./Advogados/fotoCabeloPreso.jpg"> 
       </div>
     </div>
     <div class="container-imagem-sobre">
@@ -211,7 +209,7 @@
     <section class="container-localizacao">
     <div id="container-mapa-esquerda">
         <h2 align="left">COMO FUNCIONA NOSSO ATENDIMENTO PRESENCIAL?</h2>
-        <p align="left">O atendimento presencial ocorre na região
+        <p>O atendimento presencial ocorre na região
             metropolitana de Belém-PA nos três endereços
             abaixo. Mas antes é preciso agendar a consulta pelo
             telefone ou WhatsApp, onde saberá o tipo de
@@ -223,8 +221,8 @@
         </p>
     </div>
     <div class="container-mapa-direita">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.30236048887!2d-37.26893482542053!3d-9.306454196947653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70621f9df610561%3A0x24b46d9e21cd0e98!2sAta%C3%ADde%20advocacia!5e0!3m2!1spt-BR!2sbr!4v1708523353972!5m2!1spt-BR!2sbr"
-            allowfullscreen="" width="700" height="600" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.30236048887!2d-37.26893482542053!3d-9.306454196947653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70621f9df610561%3A0x24b46d9e21cd0e98!2sAta%C3%ADde%20advocacia!5e0!3m2!1spt-BR!2sbr!4v1708523353972!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
 
@@ -248,29 +246,50 @@
         Meet Up Office – Coworking Rodovia BR 316, 893 Edifício Living Next Office, Ananindeua – PA. 
        </div>
         <div class="container-caixa-direita">
-                    <div class="col-md-4 areaAtuacao2">
-            
-                        <a href="areas-de-atuacao/trabalhista.html" >
+          <div class="imagem-online">
+            <img align="left" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEcklEQVR4nO1Z3W8bRRA/+A8Awd+A7NmjDzwhhBBS+WhaolJoHhBSeaFCFAmQ4BUhIfERp02z6yBMm5SPihdEVfEAVfsCoVLrxo7thNs1JVXUhKKUfiWQxrEdD5p14trOuV6f7+IgeaRVnL3bvd9vdmZ2ZteyutKVrvgiwxl2X/X/USf8ApcwJyTM0u/qZ9x5+IH30brX2goy/If9EJcsLRRDISHJHdjOFXuJSyjqPt2gwCV7XijWW3lXQYbGdhq/JRQbuQN0rUm2Wt/HJSu5vHdk0wFzaT8jJPuYS/aaUPazXEF+AzDTJlmOO+GdwoEDNCfNFyj4IcWec9WkT41LVqJvbK65+E1CsaOBEeASxgInIOGMr6BpScnZhGSnuWTLQRMQ5BcSxmgl2jYn7aQB2rww8AkKGt4J6MjQGfDiDomPvBOg8NZhAkLCfs8Eolno2SygQ78BHkqB/lvzLAs7PKYHECOHCtg8cDAD2B8P4/HJffhNeh9GkqHadxTkuYJR47SDkizKU4LWOAEfiD+CP178AOf/zeKpix9i/3gIudNoDGSMEkDKFIM2lf4LITyp3sWF3BXMFRbx68wreHAC9IrcbezAVOh+o1UQkqWCAH8oDfhZYjvO3DyHJP+s/I1Hk7t1v4G5TRiB1wQU63WdxClrkFozbdXb+kAyhCfk21rjJLfzNzGW2KVNyWyOFvaDqLR3uW1gAxNhPJbqw5HUi8jHn8BPz4c0sMNTjQlRP9n2zzMc12WluISjqT5j8OX0HPYagedZ2E0FSCMTEBeexOnrYxrIUv4GOld/whPyHYzE7Q2A1sHH576qgEcs4XfOm0ZmI2rmgiKX9p7m5iNhtqkTxsN4evoTLJbyFVgLub+0Y1ZHElqdM9P9VeARz16O6X5PfiRhtm0C65qlqPFl+mW8XbhVA1BePYWD449qDR+ffBVLuFp5dmVxEiPx8ngvBLhkl5ubkLT31NazjRuZzOfjPbi4Ml9DYm5hAgfPPY7Xli5V+mi1vkj2btxplWmDApm3kR8MqXCfW13biEQssROX8tdrSCyvRZt1+WVG6FXzqPkSBRYj8GUC9lOtfIBIHEvtxcJqDt2Edlradb2ajii3XmMCtGm0+gHS7kn1nisB8gUKtW2AR9pczcB7TCVIu5FECKfmf6gBf+nGWR2Z2gKvyq3+8Mz3ZI7C52D8sSp/KOmNz7vjsmoFpRGte8zTaQWjXs58KHx+77yFpVIRE39+q1fFhxo5dvj3bQ9arQoVE14+ejAZxsj5bU3SY7MWzUJPy8ArBJT9ehtL7ovdCwcOeCZABbUvIDpW1KvOH6tEnfDTngloElnYQQ4tJPs16BpZlEEv0yEaHaa1dSbkSoYmDpwAjPkKuo7AkU0wnZH/9fE699tsGl5wKPYGxeh2Dny5gnz58Bj205xtO6w3QhDbAM4tFXdPz0esrXXJx1J0maevjarqal3P0sUfXQCuZbo0ZngrXPKRUJJVnynqwwEqT12uWeld48SsK13pinU3+Q/5BLNvkBrnoAAAAABJRU5ErkJggg==">
+          </div>  
+                    <div class=" areaAtuacao2">   
+                        <a href="areas-de-atuacao/trabalhista.html" align="left">
                             AGENDAMENTOS E CONSULTAS POR WHATSAPP
                         </a>
                         <p align="left">
                             Apresentamos nossa agenda e você só escolhe o melhor horário.
                         </p>
                     </div>
-                <div class="col-md-4 areaAtuacao2 ">
-                    <a href="areas-de-atuacao/trabalhista.html">
-                        Agendamentos de Consultas pelo WhatsApp
+                    <div class="imagem-online">
+                        <img align="left" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEcklEQVR4nO1Z3W8bRRA/+A8Awd+A7NmjDzwhhBBS+WhaolJoHhBSeaFCFAmQ4BUhIfERp02z6yBMm5SPihdEVfEAVfsCoVLrxo7thNs1JVXUhKKUfiWQxrEdD5p14trOuV6f7+IgeaRVnL3bvd9vdmZ2ZteyutKVrvgiwxl2X/X/USf8ApcwJyTM0u/qZ9x5+IH30brX2goy/If9EJcsLRRDISHJHdjOFXuJSyjqPt2gwCV7XijWW3lXQYbGdhq/JRQbuQN0rUm2Wt/HJSu5vHdk0wFzaT8jJPuYS/aaUPazXEF+AzDTJlmOO+GdwoEDNCfNFyj4IcWec9WkT41LVqJvbK65+E1CsaOBEeASxgInIOGMr6BpScnZhGSnuWTLQRMQ5BcSxmgl2jYn7aQB2rww8AkKGt4J6MjQGfDiDomPvBOg8NZhAkLCfs8Eolno2SygQ78BHkqB/lvzLAs7PKYHECOHCtg8cDAD2B8P4/HJffhNeh9GkqHadxTkuYJR47SDkizKU4LWOAEfiD+CP178AOf/zeKpix9i/3gIudNoDGSMEkDKFIM2lf4LITyp3sWF3BXMFRbx68wreHAC9IrcbezAVOh+o1UQkqWCAH8oDfhZYjvO3DyHJP+s/I1Hk7t1v4G5TRiB1wQU63WdxClrkFozbdXb+kAyhCfk21rjJLfzNzGW2KVNyWyOFvaDqLR3uW1gAxNhPJbqw5HUi8jHn8BPz4c0sMNTjQlRP9n2zzMc12WluISjqT5j8OX0HPYagedZ2E0FSCMTEBeexOnrYxrIUv4GOld/whPyHYzE7Q2A1sHH576qgEcs4XfOm0ZmI2rmgiKX9p7m5iNhtqkTxsN4evoTLJbyFVgLub+0Y1ZHElqdM9P9VeARz16O6X5PfiRhtm0C65qlqPFl+mW8XbhVA1BePYWD449qDR+ffBVLuFp5dmVxEiPx8ngvBLhkl5ubkLT31NazjRuZzOfjPbi4Ml9DYm5hAgfPPY7Xli5V+mi1vkj2btxplWmDApm3kR8MqXCfW13biEQssROX8tdrSCyvRZt1+WVG6FXzqPkSBRYj8GUC9lOtfIBIHEvtxcJqDt2Edlradb2ajii3XmMCtGm0+gHS7kn1nisB8gUKtW2AR9pczcB7TCVIu5FECKfmf6gBf+nGWR2Z2gKvyq3+8Mz3ZI7C52D8sSp/KOmNz7vjsmoFpRGte8zTaQWjXs58KHx+77yFpVIRE39+q1fFhxo5dvj3bQ9arQoVE14+ejAZxsj5bU3SY7MWzUJPy8ArBJT9ehtL7ovdCwcOeCZABbUvIDpW1KvOH6tEnfDTngloElnYQQ4tJPs16BpZlEEv0yEaHaa1dSbkSoYmDpwAjPkKuo7AkU0wnZH/9fE699tsGl5wKPYGxeh2Dny5gnz58Bj205xtO6w3QhDbAM4tFXdPz0esrXXJx1J0maevjarqal3P0sUfXQCuZbo0ZngrXPKRUJJVnynqwwEqT12uWeld48SsK13pinU3+Q/5BLNvkBrnoAAAAABJRU5ErkJggg==">
+                    </div> 
+                <div class="areaAtuacao2 ">
+                    <a href="areas-de-atuacao/trabalhista.html" align="left">
+                        CONSULTA, ENTREVISTA E ANÁLISE DE DOCUMENTOS EM TEMPO REAL
                     </a>
+                    <p align="left">
+                        Voce é atendido(a) como se estivesse na frente do seu Advogado, através de videochamada.
+                    </p>
                 </div>
-                <div class="col-md-4 areaAtuacao2 ">
-                    <a href="areas-de-atuacao/trabalhista.html">
-                        Agendamentos de Consultas pelo WhatsApp
+                <div class="imagem-online">
+                    <img align="left" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEcklEQVR4nO1Z3W8bRRA/+A8Awd+A7NmjDzwhhBBS+WhaolJoHhBSeaFCFAmQ4BUhIfERp02z6yBMm5SPihdEVfEAVfsCoVLrxo7thNs1JVXUhKKUfiWQxrEdD5p14trOuV6f7+IgeaRVnL3bvd9vdmZ2ZteyutKVrvgiwxl2X/X/USf8ApcwJyTM0u/qZ9x5+IH30brX2goy/If9EJcsLRRDISHJHdjOFXuJSyjqPt2gwCV7XijWW3lXQYbGdhq/JRQbuQN0rUm2Wt/HJSu5vHdk0wFzaT8jJPuYS/aaUPazXEF+AzDTJlmOO+GdwoEDNCfNFyj4IcWec9WkT41LVqJvbK65+E1CsaOBEeASxgInIOGMr6BpScnZhGSnuWTLQRMQ5BcSxmgl2jYn7aQB2rww8AkKGt4J6MjQGfDiDomPvBOg8NZhAkLCfs8Eolno2SygQ78BHkqB/lvzLAs7PKYHECOHCtg8cDAD2B8P4/HJffhNeh9GkqHadxTkuYJR47SDkizKU4LWOAEfiD+CP178AOf/zeKpix9i/3gIudNoDGSMEkDKFIM2lf4LITyp3sWF3BXMFRbx68wreHAC9IrcbezAVOh+o1UQkqWCAH8oDfhZYjvO3DyHJP+s/I1Hk7t1v4G5TRiB1wQU63WdxClrkFozbdXb+kAyhCfk21rjJLfzNzGW2KVNyWyOFvaDqLR3uW1gAxNhPJbqw5HUi8jHn8BPz4c0sMNTjQlRP9n2zzMc12WluISjqT5j8OX0HPYagedZ2E0FSCMTEBeexOnrYxrIUv4GOld/whPyHYzE7Q2A1sHH576qgEcs4XfOm0ZmI2rmgiKX9p7m5iNhtqkTxsN4evoTLJbyFVgLub+0Y1ZHElqdM9P9VeARz16O6X5PfiRhtm0C65qlqPFl+mW8XbhVA1BePYWD449qDR+ffBVLuFp5dmVxEiPx8ngvBLhkl5ubkLT31NazjRuZzOfjPbi4Ml9DYm5hAgfPPY7Xli5V+mi1vkj2btxplWmDApm3kR8MqXCfW13biEQssROX8tdrSCyvRZt1+WVG6FXzqPkSBRYj8GUC9lOtfIBIHEvtxcJqDt2Edlradb2ajii3XmMCtGm0+gHS7kn1nisB8gUKtW2AR9pczcB7TCVIu5FECKfmf6gBf+nGWR2Z2gKvyq3+8Mz3ZI7C52D8sSp/KOmNz7vjsmoFpRGte8zTaQWjXs58KHx+77yFpVIRE39+q1fFhxo5dvj3bQ9arQoVE14+ejAZxsj5bU3SY7MWzUJPy8ArBJT9ehtL7ovdCwcOeCZABbUvIDpW1KvOH6tEnfDTngloElnYQQ4tJPs16BpZlEEv0yEaHaa1dSbkSoYmDpwAjPkKuo7AkU0wnZH/9fE699tsGl5wKPYGxeh2Dny5gnz58Bj205xtO6w3QhDbAM4tFXdPz0esrXXJx1J0maevjarqal3P0sUfXQCuZbo0ZngrXPKRUJJVnynqwwEqT12uWeld48SsK13pinU3+Q/5BLNvkBrnoAAAAABJRU5ErkJggg==">
+                  </div> 
+                <div class=" areaAtuacao2 ">
+                    <a href="areas-de-atuacao/trabalhista.html" align="left">
+                        ASSINATURA DIGITAL DE DOCUMENTOS COM UM CLICK
                     </a>
+                    <p align="left">
+                        Através do Portal de Assinaturas da OAB, você assina com um click em seu email.
+                    </p>
                 </div>
-                <div class="col-md-4 areaAtuacao2 ">
-                    <a href="areas-de-atuacao/trabalhista.html">
-                        Agendamentos de Consultas pelo WhatsApp
+                <div class="imagem-online">
+                    <img align="left" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEcklEQVR4nO1Z3W8bRRA/+A8Awd+A7NmjDzwhhBBS+WhaolJoHhBSeaFCFAmQ4BUhIfERp02z6yBMm5SPihdEVfEAVfsCoVLrxo7thNs1JVXUhKKUfiWQxrEdD5p14trOuV6f7+IgeaRVnL3bvd9vdmZ2ZteyutKVrvgiwxl2X/X/USf8ApcwJyTM0u/qZ9x5+IH30brX2goy/If9EJcsLRRDISHJHdjOFXuJSyjqPt2gwCV7XijWW3lXQYbGdhq/JRQbuQN0rUm2Wt/HJSu5vHdk0wFzaT8jJPuYS/aaUPazXEF+AzDTJlmOO+GdwoEDNCfNFyj4IcWec9WkT41LVqJvbK65+E1CsaOBEeASxgInIOGMr6BpScnZhGSnuWTLQRMQ5BcSxmgl2jYn7aQB2rww8AkKGt4J6MjQGfDiDomPvBOg8NZhAkLCfs8Eolno2SygQ78BHkqB/lvzLAs7PKYHECOHCtg8cDAD2B8P4/HJffhNeh9GkqHadxTkuYJR47SDkizKU4LWOAEfiD+CP178AOf/zeKpix9i/3gIudNoDGSMEkDKFIM2lf4LITyp3sWF3BXMFRbx68wreHAC9IrcbezAVOh+o1UQkqWCAH8oDfhZYjvO3DyHJP+s/I1Hk7t1v4G5TRiB1wQU63WdxClrkFozbdXb+kAyhCfk21rjJLfzNzGW2KVNyWyOFvaDqLR3uW1gAxNhPJbqw5HUi8jHn8BPz4c0sMNTjQlRP9n2zzMc12WluISjqT5j8OX0HPYagedZ2E0FSCMTEBeexOnrYxrIUv4GOld/whPyHYzE7Q2A1sHH576qgEcs4XfOm0ZmI2rmgiKX9p7m5iNhtqkTxsN4evoTLJbyFVgLub+0Y1ZHElqdM9P9VeARz16O6X5PfiRhtm0C65qlqPFl+mW8XbhVA1BePYWD449qDR+ffBVLuFp5dmVxEiPx8ngvBLhkl5ubkLT31NazjRuZzOfjPbi4Ml9DYm5hAgfPPY7Xli5V+mi1vkj2btxplWmDApm3kR8MqXCfW13biEQssROX8tdrSCyvRZt1+WVG6FXzqPkSBRYj8GUC9lOtfIBIHEvtxcJqDt2Edlradb2ajii3XmMCtGm0+gHS7kn1nisB8gUKtW2AR9pczcB7TCVIu5FECKfmf6gBf+nGWR2Z2gKvyq3+8Mz3ZI7C52D8sSp/KOmNz7vjsmoFpRGte8zTaQWjXs58KHx+77yFpVIRE39+q1fFhxo5dvj3bQ9arQoVE14+ejAZxsj5bU3SY7MWzUJPy8ArBJT9ehtL7ovdCwcOeCZABbUvIDpW1KvOH6tEnfDTngloElnYQQ4tJPs16BpZlEEv0yEaHaa1dSbkSoYmDpwAjPkKuo7AkU0wnZH/9fE699tsGl5wKPYGxeh2Dny5gnz58Bj205xtO6w3QhDbAM4tFXdPz0esrXXJx1J0maevjarqal3P0sUfXQCuZbo0ZngrXPKRUJJVnynqwwEqT12uWeld48SsK13pinU3+Q/5BLNvkBrnoAAAAABJRU5ErkJggg==">
+                </div> 
+                <div class=" areaAtuacao2">
+                    <a href="areas-de-atuacao/trabalhista.html" align="left">
+                        PROCESSO 100% DIGITAL
                     </a>
+                
+                    <p>
+                        Através do processo digital e ferramentas tecnológicas de coleta de provas, as audiências e diligências processuais podem ser 100% virtuais.
+                    </p>  
                 </div>
         </div>
     </section>
@@ -281,7 +300,7 @@
                 <div class="container text-center">
                     <div class="row align-items-start">
                         <div class="col-md-4">
-                            <h3 class="informationFooter rodape">Nosso telefone</h3>
+                            <h3 class="informationFooter-rodape">Nosso telefone</h3>
     
                             <h4 class="telefones rodape">(91)&nbsp;98944-5005</h4>
                             <!-- <h4 class="telefones rodape">(13)&nbsp;99111-1285</h4> -->
@@ -292,7 +311,7 @@
                         </div>
     
                         <div class="col-md-4">
-                            <h3 class="informationFooter rodape">Nos siga nas redes sociais</h3>
+                            <h3 class="informationFooter-rodape">Nos siga nas redes sociais</h3>
     
                             <a class="telefones logos1 rodape" target="_blank" href="https://wa.me/5591989445005">
                                 <i class="fa-brands fa-whatsapp fa-xl"></i>
@@ -315,7 +334,7 @@
                         </div>
     
                         <div class="col-md-4">
-                            <h3 class="informationFooter rodape address">
+                            <h3 class="informationFooter-rodape address">
                                 Atendimentos &nbsp;
                                 <i class="fa-solid fa-scale-balanced"></i>
                             </h3>
