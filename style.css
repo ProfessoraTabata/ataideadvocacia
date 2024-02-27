@@ -255,7 +255,7 @@ body {
   color: black;
 }
 .container-caixa-direita{
-  width: 80%;
+  width: 68%;
   display: inline-block;
   background-color: rgba(29, 26, 85, 0.9);
   margin-top: 20px;
@@ -282,7 +282,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: 20pt;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 .areaAtuacao2 p{
   color: white;
