@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 :root{
   --preto: #1E1E1E;
   --vermelho: #BA0403;
@@ -29,8 +39,9 @@ body {
   height: 100vh;
 }
 .navbar-nav{
-  margin: 0px 30%;
+  margin: 0px 25%;
 }
+
 .bg-dark {
   background-color: var(--vinhoEscuro) !important;
 }
@@ -65,46 +76,48 @@ body {
 .carousel-container {
   position: relative;
 }
-
 .quemSomos {
   display: flex;
   width: 100%;
   height: 50vh;
   background-color: var(--branco);
   justify-content: center;
-  align-items: flex-start; /* Align items at the top of each container-item */
-  padding-top: 3%; /* Ajuste o valor conforme necessário */
-
+  align-items: flex-start;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  margin-left: 0;
+  margin-right: 0;
 }
-.quemSomos h1{
+.quemSomos h1 {
   font-weight: bold;
   font-size: 32pt !important;
 }
-.quemSomos h2{
+
+.quemSomos h2 {
   font-size: 14pt;
 }
+
 .quemSomos p {
   text-align: justify;
   font-size: 20pt;
+}
+
+.container-item-diferente{
+  width: 50%;
+  margin: 3%;
 }
 .container-item {
   width: 50%;
   height: 90vh;
   flex: 1;
 }
-.container-item-diferente{
-  width: 50%;
-  margin: 3%;
-}
-
 .container-item img {
-  width: 58%;
-  height: 93%;
+  width: 65%; /* Alterado para ocupar 100% do container */
+  height: 100%; /* Alterado para ocupar 100% do container */
   border-radius: 3px;
-
+  /* Adiciona object-fit para manter a proporção e cobrir totalmente o container */
 }
-
-.container-imagem-sobre{
+.container-imagem-sobre {
   width: 100%;
   height: 18%;
   display: flex;
@@ -113,11 +126,12 @@ body {
   position: relative;
   margin-top: 5%;
 }
-.container-imagem-sobre img{
+.container-imagem-sobre img {
   width: 50%;
   position: absolute;
   top: 50px;
 }
+
 
 .container-sections{
   background-color: #f4f4f4;
@@ -170,6 +184,7 @@ body {
 .areaAtuacao p{
   margin-top: 15%;
   font-size: 16pt;
+  font-weight: bold;
 }
 
 .lineAreaAtuacao {
@@ -186,6 +201,7 @@ body {
   padding-top: 3%;
   padding-bottom: 3%;
   color: #fff;
+  height: auto; 
 }
 
 .container-localizacao h2{
@@ -232,11 +248,12 @@ body {
 .container-localizacaoOnline{
   background-color: #f4f4f4;
   width: 100%;
-  height: 100vh;
+  height: auto;
   color: var(--azulMarinho);
   display: block;
   justify-content: space-around;
   padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .container-localizacaoOnline h2{
@@ -407,7 +424,7 @@ z-index: 1000;
   }
   .container-localizacaoOnline{
     width: 100%;
-    height: 200vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -461,7 +478,7 @@ z-index: 1000;
     font-weight: 400;
   }
   footer{
-    height:40vh;
+    height:auto;
     background-color: #710012;
     font-size: 10pt;
     margin-top: 50px;
@@ -579,6 +596,7 @@ z-index: 1000;
     flex-direction: column; /* Alterando para layout de coluna em telas menores */
     align-items: center;
     height: auto; /* Ajustando altura conforme o conteúdo */
+    margin: 0;
  
   }
 
@@ -592,7 +610,6 @@ z-index: 1000;
 
   .quemSomos p {
     width: 100%;
-    margin-right: 16px;
     font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
   }
 
@@ -634,7 +651,8 @@ z-index: 1000;
   width: 100%;
   margin-bottom: 50px;
   font-size: 12pt;
- 
+  margin-top: 10% !important;
+  font-weight: bold;
 }
 .container-localizacao{
   width: 100%;
@@ -677,7 +695,7 @@ z-index: 1000;
 
 .container-localizacaoOnline{
   width: 100%;
-  height: 150vh;
+  height: auto;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -700,11 +718,12 @@ z-index: 1000;
   color: black;
 }
 .container-caixa-direita {
+  left: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   padding-top: 35px;
 
   background-color: rgba(29, 26, 85, 1);
@@ -737,7 +756,7 @@ z-index: 1000;
   font-weight: 400;
 }
 footer{
-  height:40vh;
+  height:auto;
   background-color: #710012;
   font-size: 10pt;
   margin-top: 50px;
@@ -815,6 +834,10 @@ z-index: 1000;
     margin: 0;
     padding: 0;
   }
+  .container-item{
+    margin: 0;
+    margin: 3%;
+  }
   .container-imagem-sobre{
     width: 100%;
     height: 200px;
@@ -836,7 +859,6 @@ z-index: 1000;
   .navbar-nav {
     margin: 0; /* Removendo margem para melhorar espaço em telas menores */
   }
-
   .btn_precisaAjuda {
     display: none; /* Ocultando o botão de ajuda em telas menores */
   }
@@ -863,6 +885,7 @@ z-index: 1000;
   }
 
   .quemSomos p {
+    width: 100%;
     margin-right: 16px;
     font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
   }
@@ -870,36 +893,216 @@ z-index: 1000;
   .container-imagem-sobre {
     display: none;
   }
-  /* Ajustes na estilização da container-sections para telas menores */
-  .areaAtuacao{
-    width: 100%;
-    height: 70px;
-    align-items: center; /* Centraliza os itens na coluna */
-    text-align: center; /* Centraliza o texto */
-  }
-  .content-icon{
-    width: 100%;
-    font-size: 20pt;
-  }
-
-  .titulo {
-    width: 100%;
-    margin-left: 16px;
-    font-size: 24px; /* Reduz o tamanho do título */
-    text-align: center !important;
-    margin-bottom: 1.5em;
-  }
-  .areaAtuacao p {
-    width: 100%;
-    margin-top: 10%; /* Ajusta a margem superior do parágrafo */
-    font-size: 9pt;
-    margin-top: 1.5em;
-   
-  }
 
   .container-imagem-sobre2{
     display: none;
   }
+  .container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.areaAtuacao{
+  width: 100%;
+  align-items: center; /* Centraliza os itens na coluna */
+  text-align: center; /* Centraliza o texto */
+}
+.titulo {
+  width: 100%;
+  margin-left: 16px;
+  font-size: 24px; /* Reduz o tamanho do título */
+  text-align: center !important;
+  margin-bottom: 1.5em;
+}
+.content-icon{
+  width: 100%;
+  font-size: 40pt !important;
+  margin-bottom: 20px;
+}
+.areaAtuacao p {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 12pt;
+  margin-top: 7% !important;
+  font-weight: bold;
+}
+.container-localizacao{
+  width: 100%;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+}
+
+.container-localizacao h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacao p{
+  width: 80%;
+  font-size: 12pt;
+  text-align: justify;
+  color: white;
+}
+.container-mapa-direita{
+  margin: 10%;
+  width: 75% ;
+  height: 80%;
+}
+#map{
+  width: 80%;
+}
+.container-imagem-sobre3{
+ display: none;
+}
+
+.container-localizacaoOnline{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; 
+}
+
+.container-localizacaoOnline h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacaoOnline p{
+  width: 75%;
+  font-size: 12pt;
+  text-align: justify;
+  color: black;
+}
+
+.container-caixa-direita {
+  left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-top: 35px;
+
+  background-color: rgba(29, 26, 85, 1);
+  border: none;
+}
+.container-caixa-direita img{
+  display: none;
+}
+.areaAtuacao2{
+  height: 10%;
+  text-align: center;
+  display: flex;
+
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14pt;
+  color: rgb(253, 253, 253);
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+
+.areaAtuacao2 p{
+  font-size: 10pt;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+footer{
+  height:auto;
+  background-color: #710012;
+  font-size: 10pt;
+  margin-top: 50px;
+}
+.rodape{
+  font-size: 10pt;
+  color: white;
+}
+.informationFooter-rodape{
+  padding-top: 50px;
+}
+.telefones rodape, .mail, .telefones{
+  font-size: 10pt;
+}
+#footer_copyright{
+  background-color: #f4f4f4;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1224px) {
@@ -907,6 +1110,10 @@ z-index: 1000;
     margin: 0;
     padding: 0;
   }
+  .container-item{
+    margin: 0;
+    margin: 3%;
+  }
   .container-imagem-sobre{
     width: 100%;
     height: 200px;
@@ -955,6 +1162,7 @@ z-index: 1000;
   }
 
   .quemSomos p {
+    width: 100%;
     margin-right: 16px;
     font-size: 12pt; /* Reduzindo o tamanho do texto em telas menores */
   }
@@ -962,64 +1170,492 @@ z-index: 1000;
   .container-imagem-sobre {
     display: none;
   }
-  /* Ajustes na estilização da container-sections para telas menores */
-  .areaAtuacao{
-    width: 100%;
-    height: 70px;
-    align-items: center; /* Centraliza os itens na coluna */
-    text-align: center; /* Centraliza o texto */
+
+  .container-imagem-sobre2{
+    display: none;
   }
-  .content-icon{
+  .container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
+}
+
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.areaAtuacao{
+  width: 100%;
+  align-items: center; /* Centraliza os itens na coluna */
+  text-align: center; /* Centraliza o texto */
+}
+.titulo {
+  width: 100%;
+  margin-left: 16px;
+  font-size: 24px; /* Reduz o tamanho do título */
+  text-align: center !important;
+  margin-bottom: 1.5em;
+}
+.content-icon{
+  width: 100%;
+  font-size: 40pt !important;
+  margin-bottom: 20px;
+}
+.areaAtuacao p {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 14pt;
+  font-weight: bold;
+  margin-top: 5% !important;
+}
+.container-localizacao{
+  width: 100%;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+}
+
+.container-localizacao h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacao p{
+  width: 80%;
+  font-size: 12pt;
+  text-align: justify;
+  color: white;
+}
+.container-mapa-direita{
+  margin: 10%;
+  width: 75% ;
+  height: 80%;
+}
+#map{
+  width: 80%;
+}
+.container-imagem-sobre3{
+ display: none;
+}
+
+.container-localizacaoOnline{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; 
+
+}
+
+.container-localizacaoOnline h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 14pt;
+  text-align: center;
+}
+.container-localizacaoOnline p{
+  width: 80%;
+  font-size: 12pt;
+  text-align: justify;
+  color: black;
+}
+
+.container-caixa-direita {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 35px;
+  margin-left: 17%;
+  background-color: rgba(29, 26, 85, 1);
+  border: none;
+}
+.container-caixa-direita img{
+  display: none;
+}
+.areaAtuacao2{
+  height: 10%;
+  text-align: center;
+  display: flex;
+
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14pt;
+  color: rgb(253, 253, 253);
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+
+.areaAtuacao2 p{
+  font-size: 10pt;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+footer{
+  height:auto;
+  background-color: #710012;
+  font-size: 10pt;
+  margin-top: 50px;
+}
+.rodape{
+  font-size: 10pt;
+  color: white;
+}
+.informationFooter-rodape{
+  padding-top: 50px;
+}
+.telefones rodape, .mail, .telefones{
+  font-size: 10pt;
+}
+#footer_copyright{
+  background-color: #f4f4f4;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
+  
+}
+
+@media (min-width: 1225px) and (max-width: 1600px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .container-item{
+    margin: 0;
+    margin: 3%;
+  }
+  .container-imagem-sobre{
     width: 100%;
-    font-size: 20pt !important;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+  }
+  .container-imagem-sobre img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  }
+  .carousel-caption {
+    display: none;
+}
+  .navbar-nav {
+    margin: 0; /* Removendo margem para melhorar espaço em telas menores */
+  }
+ 
+  .nav-item{
+    margin: 15px;
+    text-align: center;
+  }
+  .btn_precisaAjuda {
+    display: none; /* Ocultando o botão de ajuda em telas menores */
   }
 
-  .titulo {
-    width: 100%;
-    margin-left: 16px;
-    font-size: 24px; /* Reduz o tamanho do título */
-    text-align: center !important;
-    margin-bottom: 1.5em;
+  .carousel-inner img {
+    height: 60%; /* Ajustando altura da imagem no carrossel */
   }
-  .areaAtuacao p {
+
+  .quemSomos {
     width: 100%;
-    margin-top: 10%; /* Ajusta a margem superior do parágrafo */
-    font-size: 9pt;
-    margin-top: 1.5em;
-   
+    display: flex;
+    flex-direction: column; /* Alterando para layout de coluna em telas menores */
+    align-items: center;
+    height: auto; /* Ajustando altura conforme o conteúdo */
+  }
+
+  .quemSomos h1 {
+    font-size: 28pt !important; /* Reduzindo o tamanho do título em telas menores */
+  }
+
+  .quemSomos h2 {
+    font-size: 16pt; /* Reduzindo o tamanho do subtítulo em telas menores */
+  }
+
+  .quemSomos p {
+    width: 100%;
+    margin-right: 16px;
+    font-size: 18pt; /* Reduzindo o tamanho do texto em telas menores */
+  }
+
+  .container-imagem-sobre {
+    display: none;
   }
 
   .container-imagem-sobre2{
     display: none;
   }
-  
+  .container-imagem-sobre img{
+  width: 50%;
+  position: absolute;
+  top: 50px;
 }
 
-@media (min-width: 1225px) and (max-width: 1600px){
-  .container-imagem-sobre {
-    display: none;
-  }
-  .container-sections {
-    padding: 20px; /* Adapte conforme necessário */
-  }
-  .titulo {
-    font-size: 24px; /* Reduz o tamanho do título */
-  }
+.container-sections{
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.areaAtuacao{
+  width: 100%;
+  align-items: center; /* Centraliza os itens na coluna */
+  text-align: center; /* Centraliza o texto */
+}
+.titulo {
+  width: 100%;
+  margin-left: 16px;
+  font-size: 26pt; /* Reduz o tamanho do título */
+  text-align: center !important;
+  margin-bottom: 1.5em;
+}
+.content-icon{
+  width: 100%;
+  font-size: 50pt !important;
+  margin-bottom: 20px;
 
-  .content-icon {
-    font-size: 3em; /* Reduz o tamanho do ícone */
-  }
+}
 
-  .areaAtuacao p {
-    margin-top: 10%; /* Ajusta a margem superior do parágrafo */
-    font-size: 14pt;
-  }
+.areaAtuacao p {
+  width: 100%;
+  font-size: 15pt;
+  font-weight: bold;
+  margin-top: 5% ;
+}
 
-  .titulo {
-    width: 80%; /* Ajustando a largura do título em telas menores */
-  }
+.container-localizacao{
+  width: 100%;
+  height: auto;
+  background: url(./fundo/balanca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #fff;
+}
 
-  .lineAreaAtuacao {
-    margin-top: 10%; /* Ajustando a margem em telas menores */
-  }
+.container-localizacao h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 24pt;
+  text-align: center;
+}
+.container-localizacao p{
+  width: 80%;
+  font-size: 16pt;
+  text-align: justify;
+  color: white;
+}
+.container-mapa-direita{
+  margin: 10%;
+  width: 75% ;
+  height: 80%;
+}
+#map{
+  width: 100%;
+}
+.container-imagem-sobre3{
+ display: none;
+}
+
+.container-localizacaoOnline{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; 
+}
+
+.container-localizacaoOnline h2{
+  width: 75%;
+  text-align: justify;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 24pt;
+  text-align: center;
+}
+.container-localizacaoOnline p{
+  width: 80%;
+  font-size: 16pt;
+  text-align: justify;
+  color: black;
+}
+
+.container-caixa-direita {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 35px;
+  margin-left: 17%;
+  background-color: rgba(29, 26, 85, 1);
+  border: none;
+}
+.container-caixa-direita img{
+  display: none;
+}
+.areaAtuacao2{
+  height: 10%;
+  text-align: center;
+  display: flex;
+}
+.areaAtuacao2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16pt;
+  color: rgb(253, 253, 253);
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
+
+.areaAtuacao2 p{
+  font-size: 14pt;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: white;
+  font-weight: 400;
+}
+footer{
+  height:auto;
+  background-color: #710012;
+  font-size: 10pt;
+  margin-top: 50px;
+}
+.rodape{
+  font-size: 10pt;
+  color: white;
+}
+.informationFooter-rodape{
+  padding-top: 50px;
+}
+.telefones rodape, .mail, .telefones{
+  font-size: 10pt;
+}
+#footer_copyright{
+  background-color: #f4f4f4;
+  height: 20px;
+  margin-top: 20px;
+}
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+  text-decoration: none;
+  line-height: 1.5;
+}
 }
