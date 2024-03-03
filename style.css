@@ -112,7 +112,7 @@ body {
   flex: 1;
 }
 .container-item img {
-  width: 65%; /* Alterado para ocupar 100% do container */
+  width: 62%; /* Alterado para ocupar 100% do container */
   height: 100%; /* Alterado para ocupar 100% do container */
   border-radius: 3px;
   /* Adiciona object-fit para manter a proporção e cobrir totalmente o container */
@@ -329,7 +329,7 @@ body {
 
 .telefones:hover,
 .mail:hover {
-color: #1e1e1e;
+  color: #1e1e1e;
   text-decoration: none;
 }
 
@@ -1416,9 +1416,7 @@ z-index: 1000;
     margin: 15px;
     text-align: center;
   }
-  .btn_precisaAjuda {
-    display: none; /* Ocultando o botão de ajuda em telas menores */
-  }
+  
 
   .carousel-inner img {
     height: 60%; /* Ajustando altura da imagem no carrossel */
