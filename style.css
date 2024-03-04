@@ -76,8 +76,11 @@ body {
 .carousel-container {
   position: relative;
 }
-.dropdown-item:hover {
+.dropdown-item:hover{
   color: black !important; /* Use !important se necessário para garantir que a regra seja aplicada */
+}
+.dropdown-item:active{
+  background-color:white !important;
 }
 .quemSomos {
   display: flex;
