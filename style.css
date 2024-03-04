@@ -76,6 +76,9 @@ body {
 .carousel-container {
   position: relative;
 }
+.dropdown-item:hover {
+  color: black !important; /* Use !important se necessário para garantir que a regra seja aplicada */
+}
 .quemSomos {
   display: flex;
   width: 100%;
@@ -182,9 +185,8 @@ body {
 }
 
 .areaAtuacao p{
-  margin-top: 15%;
+  margin-top: 13%;
   font-size: 16pt;
-  font-weight: bold;
 }
 
 .lineAreaAtuacao {
@@ -225,7 +227,7 @@ body {
 }
 
 #map{
-  width: 150%;
+  width: 130%;
   height: 60vh;
 }
 .container-imagem-sobre3{
@@ -465,7 +467,7 @@ z-index: 1000;
     font-weight: bold;
     font-size: 12pt;
     color: rgb(253, 253, 253);
-    box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+    text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
   }
   
   .areaAtuacao2 p{
@@ -652,7 +654,6 @@ z-index: 1000;
   margin-bottom: 50px;
   font-size: 12pt;
   margin-top: 10% !important;
-  font-weight: bold;
 }
 .container-localizacao{
   width: 100%;
@@ -744,7 +745,7 @@ z-index: 1000;
   font-weight: bold;
   font-size: 14pt;
   color: rgb(253, 253, 253);
-  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
 }
 
 .areaAtuacao2 p{
@@ -929,7 +930,6 @@ z-index: 1000;
   margin-bottom: 50px;
   font-size: 12pt;
   margin-top: 7% !important;
-  font-weight: bold;
 }
 .container-localizacao{
   width: 100%;
@@ -1022,7 +1022,7 @@ z-index: 1000;
   font-weight: bold;
   font-size: 14pt;
   color: rgb(253, 253, 253);
-  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
 }
 
 .areaAtuacao2 p{
@@ -1205,7 +1205,6 @@ z-index: 1000;
   width: 100%;
   margin-bottom: 50px;
   font-size: 14pt;
-  font-weight: bold;
   margin-top: 5% !important;
 }
 .container-localizacao{
@@ -1297,7 +1296,7 @@ z-index: 1000;
   font-weight: bold;
   font-size: 14pt;
   color: rgb(253, 253, 253);
-  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
 }
 
 .areaAtuacao2 p{
@@ -1477,14 +1476,12 @@ z-index: 1000;
   width: 100%;
   font-size: 50pt !important;
   margin-bottom: 20px;
-
 }
 
 .areaAtuacao p {
   width: 100%;
   font-size: 15pt;
-  font-weight: bold;
-  margin-top: 5% ;
+  margin-top: 3%;
 }
 
 .container-localizacao{
@@ -1575,7 +1572,7 @@ z-index: 1000;
   font-weight: bold;
   font-size: 16pt;
   color: rgb(253, 253, 253);
-  box-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+  text-shadow: 5px 7px 5px rgba(255, 254, 254, 0.3);
 }
 
 .areaAtuacao2 p{

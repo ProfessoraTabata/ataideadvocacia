@@ -45,6 +45,9 @@ body {
 .bg-dark {
   background-color: var(--vinhoEscuro) !important;
 }
+.dropdown-item:hover {
+  color: black !important; /* Use !important se necessário para garantir que a regra seja aplicada */
+}
 .btn_precisaAjuda{
   position: fixed;
   width: 200px;
@@ -165,89 +168,91 @@ input, textarea {
   border-radius: 10px;
 }
 .rodape {
-  padding: 2%;
   background-color: #710012;
+  padding-right: 7%;
 }
-  .informationFooter-rodape{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    font-family: "Open Sans", sans-serif !important;
-    color: white;
-  }
-  
-  .telefones,
-  .mail {
-    color: white;
-    text-decoration: none;
-    font-size: 16pt;
-  }
-  
-  .telefones:hover,
-  .mail:hover {
-    color: #1e1e1e;
-    text-decoration: none;
-  }
-  
-  .logos1,
-  .logos2,
-  .logos3,
-  .logos4 {
-    display: inline-block;
-    font-size: 1.1em;
-  }
-  
-  
-  .btn_whats{
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
+
+
+.informationFooter-rodape{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif !important;
+  color: white;
+}
+
+.telefones,
+.mail {
+  color: white;
+  text-decoration: none;
+  font-size: 14pt;
+}
+
+.telefones:hover,
+.mail:hover {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+
+.btn_whats{
+position: fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #FFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+}
+.fa-brands.fa-whatsapp{
+  font-size: 200%;
+}
+.btn_help{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  left:40px;
+  background-color:#1D1A55;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
   box-shadow: 1px 1px 2px #888;
+  z-index:1000;
+  display: none;
+}
+
+.btn_precisaAjuda {
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  top: 20px;
+  right: 40px;
+  background-color: #1D1A55 ;
+  color: #FFF;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
   z-index: 1000;
-  }
-  .fa-brands.fa-whatsapp{
-    font-size: 200%;
-  }
-  .btn_help{
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    left:40px;
-    background-color:#1D1A55;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    box-shadow: 1px 1px 2px #888;
-    z-index:1000;
-    display: none;
-  }
-  
-  .btn_precisaAjuda {
-    position: fixed;
-    width: 200px;
-    padding: 10px;
-    top: 20px;
-    right: 40px;
-    background-color: #1D1A55 ;
-    color: #FFF;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 16px;
-    z-index: 1000;
-    text-decoration: none;
-    line-height: 1.5;
-  }
+  text-decoration: none;
+  line-height: 1.5;
+}
   @media (max-width: 768px) {
     
     .imageHeader {
