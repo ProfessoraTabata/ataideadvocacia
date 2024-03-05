@@ -1038,18 +1038,18 @@ z-index: 1000;
 footer{
   height:auto;
   background-color: #710012;
-  font-size: 10pt;
+  font-size: 14pt;
   margin-top: 50px;
 }
 .rodape{
-  font-size: 10pt;
+  font-size: 14pt;
   color: white;
 }
 .informationFooter-rodape{
   padding-top: 50px;
 }
 .telefones rodape, .mail, .telefones{
-  font-size: 10pt;
+  font-size: 12pt;
 }
 #footer_copyright{
   background-color: #f4f4f4;
@@ -1312,19 +1312,30 @@ z-index: 1000;
 footer{
   height:auto;
   background-color: #710012;
-  font-size: 10pt;
+  font-size: 14pt;
   margin-top: 50px;
 }
 .rodape{
-  font-size: 10pt;
+  font-size: 14pt;
   color: white;
 }
 .informationFooter-rodape{
   padding-top: 50px;
 }
-.telefones rodape, .mail, .telefones{
-  font-size: 10pt;
+.informationFooter-rodape i{
+  display: none;
 }
+.telefones rodape, .mail, .telefones{
+  font-size: 11pt;
+}
+.logos1,
+.logos2,
+.logos3,
+.logos4 {
+  display: inline-block;
+  font-size: 1em;
+}
+
 #footer_copyright{
   background-color: #f4f4f4;
   height: 20px;
@@ -1588,18 +1599,18 @@ z-index: 1000;
 footer{
   height:auto;
   background-color: #710012;
-  font-size: 10pt;
+  font-size: 14pt;
   margin-top: 50px;
 }
 .rodape{
-  font-size: 10pt;
+  font-size: 14pt;
   color: white;
 }
 .informationFooter-rodape{
   padding-top: 50px;
 }
 .telefones rodape, .mail, .telefones{
-  font-size: 10pt;
+  font-size: 14pt;
 }
 #footer_copyright{
   background-color: #f4f4f4;
