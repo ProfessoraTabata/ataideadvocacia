@@ -486,7 +486,81 @@ z-index: 1000;
     line-height: 1.5;
   }
 }
-
+@media (min-width: 481px) and (max-width: 768px){
+  .areasAtuacao {
+    margin-top: 15%;
+  }
+  footer{
+    height:auto;
+    background-color: #710012;
+    font-size: 14pt;
+    margin-top: 50px;
+  }
+  .rodape{
+    font-size: 16pt;
+    color: white;
+  }
+  .informationFooter-rodape{
+    padding-top: 50px;
+  }
+  .telefones rodape, .mail, .telefones{
+    font-size: 14pt;
+  }
+  #footer_copyright{
+    background-color: #f4f4f4;
+    height: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn_whats{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+  }
+  .fa-brands.fa-whatsapp{
+    font-size: 200%;
+  }
+  .btn_help{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:40px;
+    background-color:#1D1A55;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index:1000;
+    display: none;
+  }
+  
+  .btn_precisaAjuda {
+    position: fixed;
+    width: 200px;
+    padding: 10px;
+    top: 20px;
+    right: 40px;
+    background-color: #1D1A55 ;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 1000;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+}
 @media (min-width: 769px) and (max-width: 1180px) {
   main{
     width: 80%;
