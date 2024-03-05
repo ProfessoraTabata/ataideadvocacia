@@ -1002,7 +1002,6 @@ z-index: 1000;
   left: 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
   width: 90%;
   padding-top: 35px;
