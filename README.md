@@ -7,8 +7,9 @@ O site da Advocacia Ataíde foi criado com o objetivo de fornecer uma plataforma
 ## Tecnologias Utilizadas
 O site foi desenvolvido utilizando as seguintes tecnologias:
 
-HTML5
-CSS3 (Bootstrap)
+- HTML
+- CSS
+- Bootstrap
 
 ## Recursos
 O site inclui os seguintes recursos:
